@@ -1,0 +1,311 @@
+* {
+    font-family: 'Dosis', sans-serif;
+}
+html {
+    background-color: beige;
+}
+head {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    margin: 0px;
+}
+body.home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+div.nav{
+    height: 80px;
+    display: flex;
+    background-color: #536E49;
+}
+div.nav nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+div.nav nav div {
+    margin-left:10px;
+    margin-right: 10px;
+}
+div.nav nav svg {
+    margin-top: 3px;
+}
+
+#logo {
+    alt: "HelpHub Logo";
+    fill: beige;
+    transition: fill 0.3s ease, filter 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+svg:hover #logo {
+    fill: #EF8A17;
+    filter: drop-shadow(30px 30px 0px #EF2917);
+}
+div.nav a.volunteer {
+    margin-left: auto;
+    background-color: beige;
+    transition: box-shadow 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), background-color 0.3s ease, color 0.3s ease;
+    border-radius: 25px;
+    color: #536E49;
+    padding: 7px;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
+div.nav a.volunteer:hover {
+    background-color: #EF8A17;
+    color: beige;
+    box-shadow: 3px 3px #EF2917;
+}
+
+div.center_content *{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.homebody {
+    flex: 1;
+    display: flex;
+    background-color: beige;
+}
+div.homebody div{
+    width: 50%;
+    height: 100%;
+    float:left;
+}
+h1.hometitle {
+    color: #536E49;
+    text-shadow: 3px 3px beige, 6px 6px #EF8A17, 9px 9px #EF2917;
+    font-size: 2in;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: -0.1in;
+    margin-left: auto;
+    margin-right: auto;
+    line-break: anywhere;
+}
+div.homebody h3 {
+    color: #536e49;
+    text-align: center;
+}
+div.homebody div p {
+    font-size: large;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    height: 40%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+div.charities {
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 70px;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+}
+div.charities h1 {
+    margin-top: -20px;
+    margin-bottom: 0px;
+    font-size: 1in;
+    color: #536E49;
+    text-shadow: 2px 2px #EF8A17, 4px 4px #EF2917;
+    text-align: center;
+    width: 100%;
+}
+div.charitiesGrid { /* Container for the grid items*/
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12.5%;
+}
+div.charitiesGrid a { /* Items in the grid*/
+    aspect-ratio: 1 / 1;
+    background-color: beige;
+    border: 3px solid #536E49;
+    border-radius: 15px;
+    text-decoration: none;
+    align-items: start;
+    justify-content: center;
+    text-align: center;
+    transition: box-shadow 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), text-decoration 0.3s ease;
+}
+div.charitiesGrid a:hover {
+    box-shadow: 3px 3px #EF8A17, 6px 6px #EF2917;
+}
+div.charitiesGrid a:hover h4 {
+    text-decoration: underline;
+}
+div.charitiesGrid a img {
+    border-radius: 15px;
+    width: calc(100% - 30px);
+    height: 40%;
+    object-fit: fill;
+    opacity: 100%;
+    margin-bottom: -5%;
+    transition: height 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.3s ease;
+}
+div.charitiesGrid a img#on {
+    height: 0%;
+    opacity: 0%;
+}
+div.charitiesGrid a p {
+    text-decoration: none;
+    height: 0%;
+    opacity: 0%;
+    transition: height 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.3s ease;
+}
+div.charitiesGrid a p#on {
+    height: 30%;
+    opacity: 100%;
+}
+div.charitiesGrid a * {
+    font-size: large;
+    color: #536E49;
+    margin: 15px;
+    width: calc(100% - 30px);
+}
+
+div.charityPage {
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 25px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.charityPage img {
+    width: 50%;
+    border: 3px solid #536E49;
+    border-radius: 25px;
+}
+div.charityPage h1 {
+    color: #536E49;
+    text-align: center;
+    margin-top: -10px;
+}
+div.charityPage h2 {
+    color: #536E49;
+}
+div.charityPage h3 {
+    text-decoration: underline #536E49;
+}
+
+div.charityPageVolunteer {
+    background-color: #536E49;
+    color: beige;
+    margin-top: 20px;
+    border-radius: 25px;
+    width: calc(10em + 20px);
+    margin-left: auto;
+    margin-right: auto;
+    transition: width 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), box-shadow 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55), background-color 0.3s ease;
+}
+div#open {
+    width: calc(30% + 40px);
+}
+div.charityPageVolunteer h1 {
+    text-align: center;
+    padding: 10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    border-radius: inherit;
+    transition: background-color 0.3s ease, box-shadow 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    user-select: none;
+}
+div.charityPageVolunteer h1:hover {
+    background-color: #EF8A17;
+    box-shadow: 3px 3px #EF2917;
+}
+div.week {
+    margin-top: 10px;
+    width: 50%;
+    margin-right: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+div.week div {
+    text-align: center;
+    font-weight: 700;
+    background-color: beige;
+    color: #536E49;
+    border: 2px black inset;
+    border-radius: 10px;
+    width: fit-content;
+    break-after: avoid;
+}
+div.charityPageVolunteer form {
+    display:none;
+    padding: 20px;
+    margin-bottom: -10px;
+}
+div.charityPageVolunteer form input {
+    width: auto;
+}
+div.charityPageVolunteer form input.text{
+    padding-left: 5px;
+    border-radius: 10px;
+    background-color: beige;
+    color: #536E49;
+    font-weight: 700;
+    font-size: large;
+    width: calc(50% - 5px);
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, box-shadow 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+div.charityPageVolunteer form input.text:focus {
+    outline: none;
+    background-color: #EF8A17;
+    color: beige;
+    border: 2px #EF8A17 inset;
+    box-shadow: 3px 3px #EF2917;
+}
+div.charityPageVolunteer form input.submit {
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: beige;
+    color: #536E49;
+    font-weight: 700;
+    font-size: x-large;
+    border: 3px #536E49 inset;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, box-shadow 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+div.charityPageVolunteer form input.submit:hover {
+    background-color: #EF8A17;
+    color: beige;
+    border: 3px #EF8A17 inset;
+    box-shadow: 3px 3px #EF2917;
+}
+
+div.footer {
+    background-color: #536E49;
+    text-align: right;
+    height: 30px;
+    padding: 0px;
+    
+}
+div.footer p {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    height: 18px;
+    font-size: 18px;
+    font-weight: 500;
+    color: beige;
+}
+
+b {
+    color: #536E49;
+}
